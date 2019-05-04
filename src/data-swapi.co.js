@@ -1,5 +1,5 @@
 var data = {
-    "count": 9,
+    "count": 10,
     "next": "https://swapi.co/api/planets/?page=2&format=json",
     "previous": null,
     "results": [{

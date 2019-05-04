@@ -53,6 +53,17 @@ html, body {
     background-image: url("./icon/filter-solid.svg");
     background-size: 100% 100%;
 }
+
+.sort{
+    margin-top: 0;
+    background-image: url("./icon/sort-down-solid.svg");
+    background-size: 100% 100%;
+}
+
+.sort:hover{
+    cursor: pointer;
+}
+
 .drop-down{
     position: absolute;
     color: #808080;
@@ -120,7 +131,7 @@ html, body {
 .row:first-child{
     background-color: gray;
     font-weight: bold;
-    color: white;
+    color: #ffffff;
     font-size: 1.1em;
 }
 
