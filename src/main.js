@@ -67,17 +67,17 @@ function updateRowData(order, colName) {
         if(colName === "name")
             data.results.sort((a,b) => (a.name > b.name) ? 1 : -1);
         else if(colName === "orbital")
-            data.results.sort((a,b) => (a.orbital_period > b.orbital_period) ? 1 : -1);
+            data.results.sort((a,b) => (parseInt(a.orbital_period) > parseInt(b.orbital_period)) ? 1 : -1);
         else if(colName === "rotation")
-            data.results.sort((a,b) => (a.rotation_period > b.rotation_period) ? 1 : -1);
+            data.results.sort((a,b) => (parseInt(a.rotation_period) > parseInt(b.rotation_period)) ? 1 : -1);
     }
     else {
         if(colName === "name")
             data.results.sort((a,b) => (a.name < b.name) ? 1 : -1);
         else if(colName === "orbital")
-            data.results.sort((a,b) => (a.orbital_period < b.orbital_period) ? 1 : -1);
+            data.results.sort((a,b) => (parseInt(a.orbital_period) < parseInt(b.orbital_period)) ? 1 : -1);
         else if(colName === "rotation")
-            data.results.sort((a,b) => (a.rotation_period < b.rotation_period) ? 1 : -1);
+            data.results.sort((a,b) => (parseInt(a.rotation_period) < parseInt(b.rotation_period)) ? 1 : -1);
     }
 
     clearRow(data.count);
